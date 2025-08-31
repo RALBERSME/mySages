@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(images/bustos.jpg);
+  transition: 0.5s;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rem;
+  height: 30rem;
+  z-index: 100;
+  overflow: hidden;
+}
+.container:hover {
+  overflow-x: scroll;
+  scrollbar-color: rgb(74, 63, 3) rgb(250, 227, 174);
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+  background-color: rgb(247, 221, 172);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: 3px solid rgb(74, 63, 3);
+  border-radius: 1rem;
+  transform: translateX(-50%) translateY(calc(5px * var(--card))) rotate(45deg)
+    skew(-15deg, -10deg) scale(0.6);
+  box-shadow: 25px 20px 100px rgba(0, 0, 0, 0.2);
+  z-index: calc(-1 * var(--card));
+  transition: 0.5s;
+  /* overflow: hidden; */
+}
+
+.container:hover .card {
+  position: absolute;
+  z-index: 1;
+  transform: translateX(calc(-60% + calc(115% * var(--card))));
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer {
+  padding: 15px;
+  padding-top: -20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: rgb(76, 50, 2);
+}
+
+.footer h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(76, 50, 2);
+}
+.footer a {
+  text-decoration: none;
+  margin-top: 10%;
+  margin-bottom: 30%;
+  color: rgb(128, 74, 5);
+}
+.card:hover {
+  background-color: rgb(245, 163, 62);
+  border-radius: 5%;
+}
+.footer a:hover {
+  color: rgb(250, 221, 183);
+  transform: scale(1.2) translateX(5px) translateY(5px);
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .hide {
+    display: inline-block;
+  }
+  .container:hover .card {
+    position: absolute;
+    z-index: 1;
+    transform: translateX(calc(35% + calc(115% * var(--card))));
+  }
+}
