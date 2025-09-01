@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.container {
+  margin: 2.5%;
+}
+.heading {
+  font-size: 1.75rem;
+  font-weight: 550;
+  padding: 2%;
+  text-align: center;
+  background-color: orange;
+  margin-bottom: 1%;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  gap: 0%;
+  animation: pushAway 6s linear forwards;
+}
+@keyframes pushAway {
+  from {
+    gap: -20%;
+  }
+  to {
+    gap: 25%;
+  }
+}
+#priene {
+  border-style: inset;
+  border: 25px solid orange;
+  border-radius: 10px;
+  border-style: double;
+}
+.wrapper {
+  width: 200%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: orange;
+  position: relative;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: orange;
+  box-shadow: 0 0 10px orange;
+  z-index: 99;
+  right: 10%;
+  top: 10%;
+}
+.box1 {
+  animation: runBox 6s linear infinite;
+}
+.box2 {
+  animation: runBox 6s linear infinite;
+  animation-delay: 1.5s;
+}
+.box3 {
+  animation: runBox 6s linear infinite;
+  animation-delay: 3s;
+}
+.box4 {
+  animation: runBox 6s linear infinite;
+  animation-delay: 4.5s;
+}
+.box5 {
+  animation: runBox 6s linear infinite;
+  animation-direction: reverse;
+}
+.box6 {
+  animation: runBox 6s linear infinite;
+  animation-direction: reverse;
+  animation-delay: 1.5s;
+}
+.box7 {
+  animation: runBox 6s linear infinite;
+  animation-direction: reverse;
+  animation-delay: 3s;
+}
+.box8 {
+  animation: runBox 6s linear infinite;
+  animation-direction: reverse;
+  animation-delay: 4.5s;
+}
+@keyframes runBox {
+  0%,
+  100% {
+    top: 5%;
+    right: 2.5%;
+    background-color: rgb(47, 199, 241);
+    width: 15px;
+    height: 15px;
+  }
+  25% {
+    top: 5%;
+    right: calc(100% - 40px);
+    background-color: rgb(255, 0, 187);
+    width: 25px;
+    height: 25px;
+  }
+  50% {
+    top: calc(100% - 35px);
+    right: calc(100% - 40px);
+    background-color: rgb(211, 248, 26);
+    width: 25px;
+    height: 25px;
+  }
+  75% {
+    top: calc(100% - 40px);
+    right: 3.5%;
+    background-color: rgb(146, 226, 8);
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  border-radius: 10px;
+  border: dotted 5px black;
+  background-size: 20px 20px;
+  background: orange;
+}
+
+.btns {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn {
+  border: 2px solid orange;
+  background: none;
+  color: orange;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: bold;
+  position: relative;
+  color: orange;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: rgb(2, 23, 35);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: orange;
+  z-index: -1;
+  border-radius: 50% 50% 0% 0%;
+  height: 0%;
+  transition: all 0.5s;
+}
+
+.btn:hover:before {
+  height: 190%;
+}
+iframe {
+  display: flex;
+  margin: 2.5% auto;
+}
+
+.details {
+  color: orange;
+  font-size: 1.4rem;
+  text-align: left;
+  margin-top: 2.5%;
+  margin-left: 15%;
+  width: 70%;
+}

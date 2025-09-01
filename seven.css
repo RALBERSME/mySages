@@ -43,7 +43,6 @@ body {
   box-shadow: 25px 20px 100px rgba(0, 0, 0, 0.2);
   z-index: calc(-1 * var(--card));
   transition: 0.5s;
-  /* overflow: hidden; */
 }
 
 .container:hover .card {
