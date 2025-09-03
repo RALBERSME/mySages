@@ -13,7 +13,7 @@ body {
   height: 35vh;
   width: 100%;
   background-color: rgb(247, 247, 179);
-  background-image: url(https://cdn.pixabay.com/photo/2016/03/23/22/36/greece-1275793_640.jpg);
+  background-image: url(images/house.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
@@ -44,7 +44,7 @@ body {
   gap: 50px;
 }
 .card {
-  background-image: url(https://cdn.pixabay.com/photo/2023/10/11/03/33/door-8307616_640.jpg);
+  background-image: url(images/door.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;

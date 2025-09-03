@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2021/11/23/23/55/athens-6819900_640.jpg);
+  background-image: url(images/saeulen.jpg);
 }
 .container {
   margin: 5%;
@@ -42,7 +42,7 @@ body {
   padding: 2%;
   background-position: 0 0;
   background-color: white;
-  background-image: url(https://cdn.pixabay.com/photo/2016/05/19/21/27/athens-1403983_640.jpg);
+  background-image: url(images/athensTemple.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% 50%;

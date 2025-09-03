@@ -5,7 +5,7 @@
 }
 body {
   overflow: hidden;
-  background-image: url(https://cdn.pixabay.com/photo/2022/11/01/11/20/abstract-7561993_640.png);
+  background-image: url(images/abstract.png);
   background-size: cover;
 }
 
@@ -16,12 +16,10 @@ body {
   background-color: black;
 }
 .wrapper1 {
-  /* margin-top: -12%; */
   padding-top: 5%;
   margin-left: 10%;
   display: flex;
   gap: 5px;
-  /* width: 80%; */
   overflow: hidden;
   mask-image: linear-gradient(
     to right,
